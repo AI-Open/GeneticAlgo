@@ -133,5 +133,3 @@ while (score <  5):
     print "gen : ", gen
     print "fit :" , fit
     # print population
-
-    # print population
