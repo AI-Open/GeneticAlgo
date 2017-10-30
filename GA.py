@@ -5,7 +5,6 @@ def randomword(length):
 
 name = "mashig"
 
-
 population = []
 popSize = 10000
 
@@ -101,6 +100,13 @@ def mutation(offspring):
     rndNum = random.randint(0,len(offspring)-1)
     offspring = offspring.replace(offspring[rndNum],random.choice(string.ascii_lowercase))
 
+    # mutation 2
+    # for i in range(len(offspring)):
+    #     # print "in :" , offspring
+    #     rndNum = random.randint(0,1)
+    #     if (rndNum == 1):
+    #         offspring = offspring.replace(offspring[i],random.choice(string.ascii_lowercase))
+        # print "out :", offspring
     return offspring
 
 def mutationRound(population):
@@ -115,6 +121,7 @@ score = 0
 gen = 0
 while (score <  5):
     gen += 1
+    # print "len : " ,len(population)
 
     population , fit= selection(population)
     # print population
